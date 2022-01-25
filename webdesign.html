@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="F7TXkBFMR88eAMzH_c0LbORiXUZBWxzfsEYL8F475uk">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a Ryan's Web</title>
+    <link rel="stylesheet" href="webdesign.css">
+    <style>
+      body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+      
+      .dark-mode {
+        background-color: rgb(0, 0, 0);
+        color: white;
+      }
+      </style>
+    <style>
+        body {
+          font-family: Arial
+        } 
+        
+        * {
+          box-sizing: border-box;
+        }
+        .container {
+  border: 3px solid rgb(165, 255, 250);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.row {
+  padding: 10px;
+  background: #70baff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.column {
+  float: left;
+}
+
+.left {
+  width: 15%;
+}
+
+.right {
+  width: 10%;
+}
+
+.middle {
+  width: 75%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+input[type=text] {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  margin-top: -8px;
+  height: 25px;
+  color: #666;
+  padding: 5px;
+}
+.bar {
+  width: 17px;
+  height: 3px;
+  background-color: rgb(0, 102, 255);
+  margin: 3px 0;
+  display: block;
+}
+.content {
+  padding: 10px;
+}
+.content{
+    font-family: cursive;
+}
+</style>
+<div class="container">
+    <div class="row">
+      <div class="column left">
+        <span class="dot" style="background:#042e5f;"></span>
+        <span class="dot" style="background:#055095;"></span>
+        <span class="dot" style="background:#6a00ce;"></span>
+      </div>
+      <div class="column middle">
+        <input type="text" value="Welcome.To.Ryan's.Web">
+      </div>
+      <div class="column right">
+        <div style="float:right">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+</head>
+<body>
+    <div class="content">
+        <h2<span style="cursor:progress">Hi, i'm Ryan Febrianto!</span></h2>
+        <p>Here I want to share my experience during the field work practice.
+
+          The thing that must be mastered is the container of all programming languages, namely HTML, and its complements such as CSS and JS.
+          
+          I am a student of SMK Sumatra 40 Bandung who is undergoing field work practice at PT Jerbee and yes this is my website, and if you want to know my blog you can <a href="https://ranfbrnt.blogspot.com/2022/01/my-experience.html" target="_blank">click here:)</a> or you can visit
+          <a href="https://linktr.ee/RF.project" target="_blank">my biodata. </a><br></p>
+          <img src="duckwalk.gif" alt="" style="height: 50px; width: 50px;">
+      </div>
+    </div><br>
+    <button onclick="myFunction()">dark <br> mode</button>
+    <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
+
+</body>
+</html>
