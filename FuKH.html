@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FuKH.css">
+    <title>Dashboard</title>
+<head>
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
+    <style>
+        body {
+          margin: 0;
+          font-size: 28px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .header {
+          background-color: #00ddce;
+          padding: 30px;
+          text-align: center;
+        }
+        
+        #navbar {
+          overflow: hidden;
+          background-color: #00ebdf;
+        }
+        #navbar ul{
+            margin-right: 90px;
+        }
+        
+        #navbar a {
+          float: right;
+          display: block;
+          color: #00aaa2;
+          text-align: center;
+          padding: 16px;
+          padding-top: 0;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        #navbar a:hover {
+          
+          color: #006661;
+         
+        }
+        
+        
+        .content {
+          padding: 10px;
+          margin-left: 60px;
+          font-size: 50px;
+          color: #009E95;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .contenco {
+          padding: 10px;
+          margin-left: 60px;
+          font-size: 25px;
+          color: #009E95;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .button{
+          position: absolute;
+          padding-left: 100px;
+        }
+        button{
+          width: 250px;
+          cursor: pointer;
+          height: auto;
+        }
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+        .h{
+          font-size: 25px; 
+        }
+        .sticky + .content {
+          padding-top: 60px;
+        }
+
+        .potonaon{
+            float: right;
+            margin-top: 100px;
+            margin-right: 60px;
+        }
+        </style>
+</head>
+<body>
+    <div class="header">
+        <font color="#009E95"><h2>Selamat Datang Di <img src="images/logo FuKH.png" alt=""><br>
+            Forum Konsultasi Hukum</h2></font>
+      </div>
+      
+      <div id="navbar">
+          <ul>
+        <a href="javascript:void(0)">Kontak</a>
+        <a href="javascript:void(0)">Konsultasi</a>
+        <a href="javascript:void(0)">Beranda</a>
+    </ul>
+      </div>
+      <img class="potonaon" src="images/logo FuKH (1).png" alt="">
+      <div class="content">
+        <i><u><h3>TUJUAN</h3></u></i>
+      </div>
+      <div class="contenco">
+          
+        Kesejahteraan sangat diperlukan di era sekarang ini, karena kurangnya <br>
+        peduli dan masyarakat yang egois mempersulit orang lain <br>
+        orang untuk mendapatkan perhatian, dan bahkan ditindas. <br>
+        <br>
+        Itu sebabnya kami di sini untuk membantu anda.
+      </div>
+      <div class="button">
+        <a class="ajg" href="#"><button><h2 class="h">Detail</h2></button></a>
+      </div>
+     
+     <div class="infolengkap" id="dtl">
+       <p></p>
+
+     </div>
+         
+</body>
+</html>
